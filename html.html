@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 2</title>
+    <style>
+       .container{
+        display: flex;
+        gap: 10px;
+
+       }
+       .producto {
+            height: 200px;
+            width: 400px;
+            display: flex;
+            gap: 60px;
+            border: 2px solid black;
+            position: relative;
+        }
+        /*caja de producto*/
+        .izq {
+            width: 25%;
+            height: 100%;
+        }
+        .color-uno {
+            background-color: #c963c4ff;
+        }
+        .imagen{
+         position: absolute;
+         top: 25%;
+         left: 50px;
+        }
+        button{
+            border: 1px solid rgb(141,0,206);
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 5px;
+            color: rgb(141,0,206);
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+      <!--Primer Producto-->
+        <div class="producto">
+            <div class="izq color-uno">
+            </div>
+            <div class="imagen">
+                <img src="/asset/imagen/logofravega.png" alt="" width="100px" height="100px">
+            </div>
+            <div class="der">
+                <div class="titulo">
+                    <h2><span> Descubrilas</span></h2>
+                </div>
+                <div>Esta es la descripcion del producto</div>
+                <div class="boton"> <button>Ver Mas</button></div>
+            </div>
+        </div>
+        <!--Segundo producto-->
+        <div class="producto">
+            <div class="izq color-uno">
+            </div>
+            <div class="imagen">
+                <img src="/asset/imagen/sillon.png" alt="" width="100px" height="100px">
+            </div>
+            <div class="der">
+                <div class="titulo">
+                    <h2><span> Descubrilas</span></h2>
+                </div>
+                <div>Esta es la descripcion del producto</div>
+                <div class="boton"> <button>Ver Mas</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

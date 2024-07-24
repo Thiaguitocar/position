@@ -4,30 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fravega</title>
+    <style>
+        main {
+            justify-content: center;
+            flex-wrap: wrap;
+            display: flex;
+            margin: 0 50px;
+            align-items: center;
+        }
+
+        .color1 {
+            background-color: magenta;
+            width: 150px;
+            height: 200px;
+        }
+
+        span {
+            background-color: magenta;
+            color: white;
+        }
+
+        p {
+            font-weight: 900;
+        }
+
+        button {
+            justify-content: left;
+            align-items: center;
+            margin-top: 15px;
+            margin-left: 10px;
+            background-color: transparent;
+            color: plum;
+            border-color: hotpink;
+            padding: 3px 20px;
+        }
+
+        .parteblanca {
+            width: 500px;
+            height: 200px;
+
+            .text1 {
+                background-color: blueviolet;
+                color: white;
+                width: 100px;
+            }
+        }
+
+        .box1 {
+            display: flex;
+            position: relative;
+            gap: 50px;
+            border: 1px solid  black ;
+            
+        }
+
+        img {
+            position: absolute;
+            top: 35px;
+            left: 100px;
+            bottom: 90px;
+        }
+
+        .color2 {
+            background-color: blueviolet;
+            width: 150px;
+            height: 200px;
+        }
+    </style>
 </head>
 
 <body>
     <main>
-        <div class="box1">
+        <div class="box1" id="box1">
             <div class="color1">
-                <div></div>
             </div>
             <div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <img src="/asset/imagen/logofravega.png" alt="" width="80px" height="80px">
             </div>
-        </div>
-        <div class="box2">
-            <div class="color2">
-                <div></div>
+            <div class="parteblanca">
                 <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <span>Descubrilas</span>
+                </div>
+                <div>
+                    <p>No te pierdas las mejores ofertas<br>al precio más bajos</p>
+                </div>
+                <div>
+                    <button>Ver más</button>
                 </div>
             </div>
+        </div>
+        <div class="box1" id="box2">
+            <div class="color2">
+            </div>
+            <div>
+                <img src="/asset/imagen/sillon.png" alt="" width="80px" height="80px">
+            </div>
+            <div class="parteblanca">
+                <div class="text1">
+                    Frávega Casa
+                </div>
+                <div>
+                    <p>Hasta el 40% off en colchones,<br> muebles y articulos de <br> decoracion seleccionad.</p>
+                </div>
+                <div>
+                    <button>Ver más</button>
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
 </body>
 
