@@ -6,24 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ej 3</title>
     <style>
-        .producto {
-            height: 200px;
-            width: 400px;
+        .container{
             display: flex;
+            gap: 10px;
+           justify-content: center;
+        }
+     
+
+        .box1 {
+         position: relative;
+
         }
 
         .descuento {
             background-color: rgb(214, 119, 167);
-            width: 15%;
-
+            width: 50px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            left: 5px;
+            
             .hasta {
-                text-align: center;
+                text-align: left;
                 font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                font-size: 10px;
             }
+        }
+
+        .descu {
+            display: flex;
+            
         }
 
         .porcentaje {
             display: flex;
+            color: white;
+            font-size: 25px;
+            font-family:initial;
+        }
+
+        .desc {
+            display: block;
+            text-align: right;
+            color: white;
+            font-size: 10px;
+        }
+        .texto{
+            font-size: 10px;
         }
     </style>
 </head>
@@ -36,7 +66,7 @@
             </div>
             <div class="descuento">
                 <div class="hasta">HASTA</div>
-                <div class="">
+                <div class="descu">
                     <div class="porcentaje">25</div>
                     <div class="desc">
                         <div>%</div>
@@ -44,21 +74,39 @@
                     </div>
                 </div>
             </div>
-            <div>Notebook, tablets, smarwatches, y muchos <br>mas en fravega hasta 6 sin interes</div>
+            <div class="texto">Notebook, tablets, smarwatches, y muchos <br>mas en fravega hasta 6 sin interes</div>
         </div>
-        <div class="box2">
+        <div class="box1">
             <div class="imagen">
                 <img src="/asset/imagen/bicicleta.png" alt="" width="200px" height="100px">
             </div>
-            <div></div>
-            <div></div>
+            <div class="descuento">
+                <div class="hasta">HASTA</div>
+                <div class="descu">
+                    <div class="porcentaje">45</div>
+                    <div class="desc">
+                        <div>%</div>
+                        <div>OFF</div>
+                    </div>
+                </div>
+            </div>
+            <div class="texto">Aprovecha hasta 6 cuotas sin interes en articulos<br>de deportes y fitness</div>
         </div>
-        <div class="box3">
+        <div class="box1">
             <div class="imagen">
                 <img src="/asset/imagen/cocina.png" alt="" width="200px" height="100px">
             </div>
-            <div></div>
-            <div></div>
+            <div class="descuento">
+                <div class="hasta">HASTA</div>
+                <div class="descu">
+                    <div class="porcentaje">30</div>
+                    <div class="desc">
+                        <div>%</div>
+                        <div>OFF</div>
+                    </div>
+                </div>
+            </div>
+            <div class="texto">Heladera, cocinas, lavos y pequeños <br> electrodomesticos en hasta 6 cuotas sin interes</div>
         </div>
     </div>
 </body>
